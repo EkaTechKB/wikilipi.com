@@ -1,0 +1,167 @@
+<?php
+// Powered by Zyro
+$local = in_array($_SERVER['REMOTE_ADDR'], ['127.0.0.1','localost','::1']);
+
+if ($local != 1)
+{
+	if(empty($_SERVER['HTTPS']) || $_SERVER['HTTPS'] == "off"){
+		session_start();
+		$redirect = 'https://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
+		header('HTTP/1.1 301 Moved Permanently');
+		header('Location: ' . $redirect);
+		exit();
+	}
+}
+
+ //ini_set('session.cookie_domain', '.kelkarkul.org');
+ //echo "Site is under maintainance";
+ //session_start();
+//echo session_save_path();
+//phpinfo();
+//exit;
+//error_reporting(E_ERROR);
+//error_reporting(E_ERROR | E_WARNING | E_PARSE | E_NOTICE);
+//include dirname(__FILE__).'/vrutanta/index.php';
+?>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>View Word</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-table.min.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-table.min.js"></script>
+    <script src="dashboard.js"></script>
+</head>
+
+<body>
+    <div class="card-body">
+
+        <div class="card" style="width: 100%">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-sm-4" style="margin-top:5px">
+                        <input class="form-control" id="inputdefault" type="text" placeholder="Search by english word">
+                    </div>
+                    <div class="col-sm-2" style="margin-top:5px">
+                        <button onclick="onSearch()" class="btn btn-primary" style="width: 100%;">Search</button>
+                    </div>
+                    <div class="col-sm-2" style="margin-top:5px">
+                        <button class="btn btn-primary" onclick="onBtnPrev()" style="width: 100%;">Prev</button>
+                    </div>
+                    <div class="col-sm-2" style="margin-top:5px">
+                        <button class="btn btn-primary" onclick="onBtNext()" style="width: 100%;">Next</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" style="width: 100%;margin-top: 10px;">
+            <div class="card-body">
+                <div id="wordcount">Word count</div>
+            </div>
+        </div>
+
+        <div id="loading" class="overlayloader"></div>
+        <div id="wordId" class="wordData" style="margin-top: 10px;">
+            <table id="table" data-height="100%">
+                <thead>
+                    <tr>
+                        <th data-field="C_ENGLISH">English</th>
+                        <th data-field="C_EKALIPI">Ekalipi</th>
+                        <th data-field="C_OTHER">Other</th>
+                        <th data-field="C_COUNT">Count</th>
+                        <th data-field="C_COUNTRY">Country</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+
+    </div>
+
+    <!-- Modal dialog confirmation-->
+    <div class="modal" id="myModal">
+        <div class="modal-dialog modal-sm" role="dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Alert</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- End of Modal -->
+
+
+    <!-- Modal save -->
+    <div class="modal" id="myModalSave">
+        <div class="modal-dialog" role="dialog" style="width:100%;">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Add word
+                    </h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+
+                    <div class="form-group">
+                        <label for="english">English word</label>
+                        <input type="text" class="form-control" id="english" name="english">
+                    </div>
+                    <div class="form-group">
+                        <label for="ekalipi">Ekalipi word</label>
+                        <input type="text" class="form-control" id="ekalipi" name="ekalipi">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="other">Other language word</label>
+                        <input type="text" class="form-control" id="other" name="other">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="count">Number of occurances</label>
+                        <input type="text" class="form-control" id="count" name="count">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="country">Country</label>
+                        <input type="text" class="form-control" id="country" name="country">
+                    </div>
+                </div>
+                <div id="snackbar">Word Added successfully</div>
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button id="save_word" type="submit" class="btn btn-primary" data-toggle="modal">Add Word</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- End of save Modal -->
+
+
+</body>
+
+</html>

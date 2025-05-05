@@ -1,0 +1,229 @@
+.head-style{
+  text-align: center;
+  font-size:10px; font-weight:300;
+}
+
+.maincontent{
+  text-wrap:normal;
+}
+body {
+    font-family: "Vardana", 'Vardana', Cambria, sans-serif;
+    background-color: #fafaf3;
+}
+
+.panel-body {
+    text-align: left;
+}
+
+.lookatme {
+    vertical-align: top;
+}
+
+.news {
+    position: relative;
+}
+
+.address {
+    text-align: left;
+}
+
+.contest of ekalipi {
+    text-align: left;
+    white-space: normal
+}
+.border{
+    border-color: #000000
+}
+
+#FAQ {
+    text-align: left;
+}
+
+.signup {
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+h2 {
+    margin: 0;
+    font-size: 52px;
+    font-family: "trebuchet ms", sans-serif;
+}
+
+.item {
+    background: #333;
+    text-align: center;
+    height: 400px !important;
+}
+.misc{
+    min-height: 30%;
+    padding-top: 100px;
+    text-align: left;
+}
+.vendors{
+    min-height: 30%;
+    padding-top: 100px;
+    text-align: left;
+.archives{
+    min-height: 30%;
+    padding-top: 100px;
+    text-align: left;
+}
+.educationaltrainingtools{
+    min-height: 30%;
+    padding-top: 100px;
+    text-align: left;
+}
+.carousel-caption {
+    margin-bottom: 9%;
+}
+
+.carousel-inner {
+    width: 100%;
+}
+
+.contact {
+    margin-bottom: 2%;
+    text-align: left;
+}
+
+.carousel {
+    margin-top: -40px;
+    max-height: 370px;
+    overflow: hidden;
+    margin-bottom: 2%;
+}
+
+.lead {
+    text-align: left;
+}
+
+.bs-example {
+    margin: 20px;
+}
+
+.modal-footer {
+    text-align: center;
+}
+
+.full {
+    width: 100%;
+}
+
+.gap {
+    height: 30px;
+    width: 100%;
+    clear: both;
+    display: block;
+}
+
+.footer {
+    background: #EDEFF1;
+    height: auto;
+    padding-bottom: 30px;
+    position: relative;
+    width: 100%;
+    border-bottom: 1px solid #CCCCCC;
+    border-top: 1px solid #DDDDDD;
+}
+
+.footer p {
+    margin: 0;
+}
+
+.footer img {
+    max-width: 100%;
+}
+
+.footer h3 {
+    border-bottom: 1px solid #BAC1C8;
+    color: #54697E;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 27px;
+    padding: 40px 0 10px;
+    text-transform: uppercase;
+}
+
+.footer ul {
+    font-size: 13px;
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+    margin-top: 15px;
+    color: #7F8C8D;
+}
+
+.footer ul li a {
+    padding: 0 0 5px 0;
+    display: block;
+}
+
+.footer a {
+    color: #78828D
+}
+
+.supportLi h4 {
+    font-size: 20px;
+    font-weight: lighter;
+    line-height: normal;
+    margin-bottom: 0 !important;
+    padding-bottom: 0;
+}
+
+.social li {
+    background: none repeat scroll 0 0 #B5B5B5;
+    border: 2px solid #B5B5B5;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    float: left;
+    height: 36px;
+    line-height: 36px;
+    margin: 0 8px 0 0;
+    padding: 0;
+    text-align: center;
+    width: 36px;
+    transition: all 0.5s ease 0s;
+    -moz-transition: all 0.5s ease 0s;
+    -webkit-transition: all 0.5s ease 0s;
+    -ms-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    list-style: none;
+}
+
+.social li:hover {
+    transform: scale(1.15) rotate(360deg);
+    -webkit-transform: scale(1.1) rotate(360deg);
+    -moz-transform: scale(1.1) rotate(360deg);
+    -ms-transform: scale(1.1) rotate(360deg);
+    -o-transform: scale(1.1) rotate(360deg);
+}
+
+.social li a {
+    color: #EDEFF1;
+}
+
+.social li:hover {
+    border: 2px solid #2c3e50;
+    background: #2c3e50;
+}
+
+.social li a i {
+    font-size: 16px;
+    margin: 0 0 0 5px;
+    color: #EDEFF1 !important;
+}
+
+.footer-bottom {
+    background: #E3E3E3;
+    border-top: 1px solid #DDDDDD;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.footer-bottom p.pull-left {
+    padding-top: 6px;
+}

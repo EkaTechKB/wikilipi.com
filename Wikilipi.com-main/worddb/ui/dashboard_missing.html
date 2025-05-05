@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>View Word</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-table.min.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-table.min.js"></script>
+    <script src="dashboard_missing.js"></script>
+</head>
+<body>
+ <div class="card-body">
+        
+        <div class="card" style="width: 100%">
+            <div class="card-body">
+                    <div class="row">
+                            <div class="col-sm-4" style="margin-top:5px">                
+            <input class="form-control" id="inputdefault" type="text" placeholder="Search by english word">
+        </div>
+        <div class="col-sm-2" style="margin-top:5px">
+            <button onclick="onSearch()" class="btn btn-primary" style="width: 100%;">Search</button>
+           </div>
+           <div class="col-sm-2" style="margin-top:5px">
+                <button class="btn btn-primary" onclick="onBtnPrev()" style="width: 100%;">Prev</button>
+                </div>
+        <div class="col-sm-2" style="margin-top:5px">
+<button class="btn btn-primary" onclick="onBtNext()" style="width: 100%;">Next</button>
+</div>
+
+<div class="col-sm-2" style="margin-top:5px">
+    <button class="btn btn-primary" onclick="printerDiv('wordId')" style="width: 100%;">Print</button>
+    </div>
+          </div>    
+        </div> 
+        </div> 
+
+        <div class="card" style="width: 100%;margin-top: 10px;">
+            <div class="card-body">
+                    <div id="wordcount">Word count</div>
+            </div>
+        </div>
+
+        <div id = "loading" class="overlayloader"></div>
+        <div id="wordId" class="wordData" style="margin-top: 10px;">
+        <table id="table" data-height="100%">
+            <thead>
+                <tr>
+                    <th data-field="C_ENGLISH">English</th>
+                    <th data-field="C_EKALIPI">Ekalipi</th>
+                    <th data-field="C_OTHER">Other</th>
+                    <th data-field="C_COUNT">Count</th>
+                    <th data-field="C_COUNTRY">Country</th>
+                </tr>
+                </thead>
+        </table>
+        </div>
+
+    </div>
+
+    <!-- The Modal -->
+<div class="modal" id="myModal"  >
+        <div class="modal-dialog modal-sm" role="dialog">
+          <div class="modal-content">
+      
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">Alert</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+      
+            <!-- Modal body -->
+            <div class="modal-body">
+              
+            </div>
+      
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+      
+          </div>
+        </div>
+      </div>
+</body>
+</html>

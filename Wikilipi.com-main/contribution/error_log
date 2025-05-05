@@ -1,0 +1,8 @@
+[25-Mar-2021 15:13:48 UTC] PHP Notice:  Undefined property: stdClass::$cTime in /home/ekalipi/public_html/wikilipi.com/contribution/save-contribution.php on line 12
+[25-Mar-2021 15:15:18 UTC] PHP Notice:  Undefined property: stdClass::$cTime in /home/ekalipi/public_html/wikilipi.com/contribution/save-contribution.php on line 12
+[25-Mar-2021 15:17:11 UTC] PHP Notice:  Undefined property: stdClass::$cTime in /home/ekalipi/public_html/wikilipi.com/contribution/save-contribution.php on line 12
+[25-Mar-2021 15:17:35 UTC] PHP Notice:  Undefined property: stdClass::$cTime in /home/ekalipi/public_html/wikilipi.com/contribution/save-contribution.php on line 12
+[25-Mar-2021 15:48:17 UTC] PHP Notice:  Undefined property: stdClass::$status in /home/ekalipi/public_html/wikilipi.com/contribution/get-contribution.php on line 12
+[25-Mar-2021 15:48:17 UTC] PHP Notice:  Undefined variable: data in /home/ekalipi/public_html/wikilipi.com/contribution/get-contribution.php on line 27
+[25-Mar-2021 15:48:24 UTC] PHP Notice:  Undefined property: stdClass::$status in /home/ekalipi/public_html/wikilipi.com/contribution/get-contribution.php on line 12
+[25-Mar-2021 15:48:24 UTC] PHP Notice:  Undefined variable: data in /home/ekalipi/public_html/wikilipi.com/contribution/get-contribution.php on line 27

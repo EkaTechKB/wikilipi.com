@@ -1,0 +1,4 @@
+[25-Oct-2018 05:06:17 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/ekalipi/public_html/wikilipi.com/worddb/ui/update2.php on line 84
+[25-Oct-2018 05:06:23 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/ekalipi/public_html/wikilipi.com/worddb/ui/update2.php on line 84
+[25-Oct-2018 11:10:08 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/ekalipi/public_html/wikilipi.com/worddb/ui/update2.php on line 81
+[02-Jan-2019 10:26:06 UTC] PHP Parse error:  syntax error, unexpected '').scrollIntoView()'' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in /home/ekalipi/public_html/wikilipi.com/worddb/ui/delete2.php on line 119

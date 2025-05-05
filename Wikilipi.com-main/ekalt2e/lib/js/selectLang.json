@@ -1,0 +1,53 @@
+{
+	"English":{
+				"lang":"English",
+				"placeHolder":"Write Text Here!",
+				"sampleText" : "Sample text: Copy and paste into input box above and click Convert.
+Whereas recognition of the inherent dignity and of the equal and inalienable rights of all members of the human family is the foundation of freedom, justice and peace in the world",
+				"instructions":"This converter converts text written in Roman script to Ekalipi script. 
+It is intended to assist you in reading text writtten by others. 
+To write the text yourself, you should learn and use the EKalipi keyboard. 
+Please review the output for accuracy.Report any errors to admin@ekalipi.org. 
+Include the input, output and error messages in the email. 
+The converter uses a custom pronunciation dictionary containing 
+English Roman script words and their Indian English pronunciation 
+equivalents wriiten in the Ekalipi script. 
+Words not found in the custom dictionary but found in the backup British 
+English dictionary are enclosed in curly brackets. 
+Words not found in either dictionary are shown in square brackets "[ ]". 
+Please ensure that the input text is spelt correctly. 
+Use of a spell checker is highly recommended.	
+Stresss characters are not a part of the core Ekalipi platform. 
+The option is provided as a pronunciation aid. 
+By default, conjunct consonants are shown without emdded hyphens. 
+Although it does make the text appear more "Englishlike", it reduces 
+the acuracy of the pronunciation. 
+Whenever possible, please check the "conjunct consonants" box."],
+
+				"instructionsEkalipi" : ["Đes kan-vartar kān-vart-s tλk-s-t retan en Rowman s-k-rep-t tu Λklepee s-k-rep-t. 
+Et ez en-tλn-dad tu ases-t yu en rλden tλk-s-t w-ret-t-tλn bāy ađarz. 
+Tu rāyt đa tλk-s-t yarsλl-f, yu s-hud larn @n-d yus đa Λklepee kebör-d. 
+P-lez rev-yu đa āwt-put för āccurācy.rλpor-t λne λrarz tu admin@ekalipi.org. 
+En-k-lud đa en-put, āwt-put @n-d λrar mλsajaz en đa emλyl. 
+Đa kan-vartar yusaz a kas-tam p-row-nan-seλys-han dek-s-hanλre kan-tλynen 
+En-g-les-h Rowman s-k-rep-t ward-z @n-d đλr En-dean En-g-les-h p-row-nan-seλys-han 
+ek-wevalan-t-s w-reetλn en đa Λklepee s-k-rep-t. 
+Ward-z nāt fāwn-d en đa kas-tam dek-s-hanλre bat fāwn-d en đa b@kap B-retes-h 
+En-g-les-h dek-s-hanλre ār λn-k-lowz-d en karle b-r@kat-s. 
+Ward-z nāt fāwn-d en eđar dek-s-hanλre ār s-hown en s-k-wλr b-r@kat-s "[ ]". 
+P-lez λn-s-hur đ@t đa en-put tλk-s-t ez s-pλl-t karλk-t-le. 
+Yus av a s-pλl cλkar ez hāyle rλkamλn-dad. 
+s-t-rλs-s-s k@rek-tarz ār nāt a pār-t av đa kör Λklepee p-l@t-för-m. 
+Đa āp-s-han ez p-ravāydad @z a p-row-nan-seλys-han λyd. 
+Bāy deföl-t, con-yunct kān-sanan-t-s ār s-hown weŧ-hāwt λm-d-dλd hyp-hλn-s. 
+Öl-đow et daz mλyk đa tλk-s-t aper mör "λn-g-les-h-lekλ", et radusaz 
+đa ācurācy av đa p-row-nan-seλys-han. 
+Wλnλvar pāsabal, p-lez cλk đa "con-yunct kān-sanan-t-s" bāk-s."]
+	},
+	
+	"Marathi":{
+				"lang":"English",
+				"placeHolder":"Placeolder",
+				"instructions":[""]
+	},
+}

@@ -1,0 +1,7 @@
+[06-May-2021 17:48:05 UTC] PHP Notice:  Trying to get property 'status' of non-object in /home/ekalipi/public_html/wikilipi.com/miss-char/get-miss-char.php on line 12
+[06-May-2021 17:48:05 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/ekalipi/public_html/wikilipi.com/miss-char/get-miss-char.php on line 19
+[06-May-2021 17:48:05 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given in /home/ekalipi/public_html/wikilipi.com/miss-char/get-miss-char.php on line 21
+[06-May-2021 17:48:05 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in /home/ekalipi/public_html/wikilipi.com/miss-char/get-miss-char.php on line 26
+[06-May-2021 17:48:05 UTC] PHP Notice:  Undefined variable: data in /home/ekalipi/public_html/wikilipi.com/miss-char/get-miss-char.php on line 27
+[06-May-2021 17:48:41 UTC] PHP Notice:  Trying to get property 'status' of non-object in /home/ekalipi/public_html/wikilipi.com/miss-char/get-miss-char.php on line 12
+[07-May-2021 13:44:58 UTC] PHP Warning:  Creating default object from empty value in /home/ekalipi/public_html/wikilipi.com/miss-char/delete-miss-char.php on line 21

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Add ekalipi word</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-table.min.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-table.min.js"></script>
+    <script src="addword.js"></script>
+</head>
+
+<body>
+
+    </br>
+    <div class="container">
+        <div id="loading" class="overlayloader"></div>
+        <div class="form-group">
+            <label for="english">English word</label>
+            <input type="text" class="form-control" id="english" name="english">
+        </div>
+        <div class="form-group">
+            <label for="ekalipi">Ekalipi word</label>
+            <input type="text" class="form-control" id="ekalipi" name="ekalipi">
+        </div>
+
+        <div class="form-group">
+            <label for="other">Other language word</label>
+            <input type="text" class="form-control" id="other" name="other">
+        </div>
+
+        <div class="form-group">
+            <label for="count">Number of occurances</label>
+            <input type="text" class="form-control" id="count" name="count">
+        </div>
+
+        <div class="form-group">
+            <label for="country">Country</label>
+            <input type="text" class="form-control" id="country" name="country">
+        </div>
+
+        <button id="save_word" type="submit" class="btn btn-primary" data-toggle="modal">Add Word</button>
+
+    </div>
+
+    <!-- The Modal -->
+    <div class="modal" id="myModal">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Confirmation</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    Word added successfully.
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

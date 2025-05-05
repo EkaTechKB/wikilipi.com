@@ -1,0 +1,129 @@
+<?php
+// Powered by Zyro
+$local = in_array($_SERVER['REMOTE_ADDR'], ['127.0.0.1','localost','::1']);
+
+if ($local != 1)
+{
+	if(empty($_SERVER['HTTPS']) || $_SERVER['HTTPS'] == "off"){
+		session_start();
+		$redirect = 'https://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
+		header('HTTP/1.1 301 Moved Permanently');
+		header('Location: ' . $redirect);
+		exit();
+	}
+}
+
+ //ini_set('session.cookie_domain', '.kelkarkul.org');
+ //echo "Site is under maintainance";
+ //session_start();
+//echo session_save_path();
+//phpinfo();
+//exit;
+//error_reporting(E_ERROR);
+//error_reporting(E_ERROR | E_WARNING | E_PARSE | E_NOTICE);
+//include dirname(__FILE__).'/vrutanta/index.php';
+?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../assets/css/jquery-ui.css">
+
+    <script src="../assets/js/jquery.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="../assets/js/jquery-ui.js"></script>
+
+    <!-- Custom CSS -->
+    <!-- <link href="assets/css/scrolling-nav.css" rel="stylesheet"> -->
+
+    <!-- Custom styles for our template -->
+    <!-- <link rel="stylesheet" href="assets/css/bootstrap-theme.css" media="screen"> -->
+    <!-- <link rel="stylesheet" href="assets/css/main.css"> -->
+    <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
+    <!-- <link rel="stylesheet" href="assets/css/jkeyboard.css"> -->
+    <!-- <link rel="stylesheet" href="assets/css/custom_menu.css"> -->
+
+    <link rel="stylesheet" href="../assets/css/jquery.dataTables.min.css">
+    <script src="../assets/js/jquery.dataTables.min.js"></script>
+    <script src="contribution.js"></script>
+</head>
+
+<body style='background-color: rgb(240, 218, 242);'>
+    <div class='container'>
+        <div class="navbar navbar-inverse navbar-fixed-top headroom">
+            <!-- Modal -->
+
+            <div class="container">
+                <!-- <div class="row" >
+				<div class="col-xs-12 col-sm-12 col-lg-12 col-md-12">
+					<div class="navbar-header">
+						<div align="left">
+							<button type="button" class="navbar-toggle" data-toggle="collapse"
+								data-target=".navbar-collapse"><span class="icon-bar"></span>
+								<span class="icon-bar"></span> <span class="icon-bar"></span></button>
+						</div>
+						<div align="left">
+							<a class="navbar-brand" href="#"><strong>Pronunciation Dictionary</strong></a>
+						</div>
+					</div>
+				</div>
+			</div> -->
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-lg-12 col-md-12">
+                        <div class="collapse navbar-collapse">
+                            <ul class="nav navbar-nav pull-left">
+                                 <!-- <li class="active"><a class="navbar-brand" href="#"><strong>Pronunciation
+                                            Dictionary</strong></a></li> -->
+											<li class="active" style="font-size:16px"><a href="TTIProperNamePronc.php"target="_blank">Expert Mode</a></li>
+						  <li class="active" style="font-size:16px"><a href="contribution.php"target="_blank">Contributions</a></li>
+						  <li class="active" style="font-size:16px"><a href="http://wikilipi.com/view/dictionary.php"target="_blank">Dictionary</a></li>
+							<li class="active" style="font-size:16px"><a href="https://ekalipi.com/downloads.html"target="_blank">Downloads</a></li>
+							<li class="active" style="font-size:16px"><a href="about.html"target="_blank">About</a></li>
+							<li class="active" style="font-size:16px"><a href="#contact" class="tm-nav-item-link">Contact</a></li>
+							<li style="font-size:16px"><a href="http://wikilipi.com/contribution/dashboard.php" target="_blank">AdminApprovals</a></li>
+                            </ul>
+                        </div>
+                        <!--/.nav-collapse -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class='row' style='margin-top:50px;'>
+            <div class='col-md-12'>
+                <div class="text-center"><span>
+                        <font face="Arial" size="6">Contributions</font><span></div>
+                        <div>
+                            <input type="radio" id="pending" name="status" value="pending" onchange="handlePending()" checked>
+                                <label for="male">Pending</label><br>
+                                <input type="radio" id="Approved" name="status" value="Approved" onchange="handleApproved()">
+                                <label for="female">Approved</label><br>
+                        </div>
+                <br>
+
+                <table id="example" class="display" style="width:100%;">
+                    <thead>
+                        <tr>
+                            <th>English</th>
+                            <th>Ekalipi</th>
+                            <th>Country</th>
+                            <th>Time</th>
+                            <th>folder name</th>
+                            <th>email</th>
+                            <th>Status</th>
+                            <th>button</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

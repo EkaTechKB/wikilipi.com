@@ -1,0 +1,12 @@
+.head-style{
+				text-align: center;
+				font-size:10px; font-weight:300;
+			}
+
+.jkeyboard .jline ul li{    
+							margin: 1px 15px 15px 7px !important;				// Space between keys of keyboard
+						}
+
+.maincontent{
+						text-wrap:normal;
+			}
